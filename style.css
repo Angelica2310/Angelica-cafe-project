@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ffe4e1;
+  min-height: 100vh; /*full screen*/
+}
+
+header {
+  color: palevioletred;
+  font-family: fantasy;
+  height: 160px;
+  width: 100%;
+  background-color: transparent;
+  overflow: hidden;
+  margin-top: -20px;
+}
+
+.logo {
+  float: left;
+  top: -20px;
+  left: 7px;
+}
+
+nav {
+  text-align: right;
+  padding-right: 120px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding-top: 100px;
+}
+
+ul li {
+  list-style: none;
+  margin-right: 100px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+ul li:hover {
+  background: white;
+  color: black;
+  padding: 10px;
+  font-size: 21px;
+}
+
+.header_list button {
+  position: flex;
+  border: none;
+  background-color: transparent;
+  color: palevioletred;
+  font-family: fantasy;
+  font-size: 16px;
+  text-align: center;
+}
+
+.book_button {
+  background-color: white;
+  border: 2px solid palevioletred;
+  padding: 15px 10px;
+  width: 130px;
+  cursor: pointer;
+  position: fixed;
+  right: 10px;
+  top: 70px;
+}
+
+.about_us_img {
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-top: -70px;
+  float: left;
+}
+
+.about_us {
+  font-size: 20px;
+  line-height: 1.3em;
+  margin: 100px;
+}
+
+.about_us_text {
+  text-align: justify;
+  margin-top: 10px;
+  margin-right: 130px;
+}
+
+h2 {
+  text-align: right;
+  margin-right: 350px;
+  font-family: fantasy;
+  color: palevioletred;
+  font-weight: bold;
+}
+
+.our_menu_table {
+  text-align: center;
+  border: 5px solid palevioletred;
+  border-style: dotted;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-bottom: 100px;
+  margin-top: 150px;
+}
+
+.our_menu_text {
+  font-family: fantasy;
+  color: palevioletred;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+table,
+th,
+td {
+  border: 1px solid palevioletred;
+  border-collapse: collapse;
+  font-size: 20px;
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+.contact_us_text {
+  text-align: left;
+  font-size: 30px;
+}
+
+.contact_us_content {
+  display: inline-block;
+  margin-right: 50%;
+  margin-top: -20px;
+}
+
+.contact_us {
+  margin-bottom: 100px;
+  margin-top: -50px;
+  float: left;
+  margin-left: 250px;
+}
+
+.icon_img {
+  float: left;
+  margin-right: 10px;
+  margin-top: -2px;
+}
+
+.side_form {
+  position: absolute;
+  height: 50%;
+  border: 5px solid hotpink;
+  width: 30%;
+  margin-left: 53%;
+  border-style: hidden;
+}
+
+.message_form {
+  width: 550px;
+  height: 450px;
+}
+
+.message_us {
+  margin-right: 35%;
+  margin-top: -20px;
+  font-size: 30px;
+}
+
+.side_form_input {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  appearance: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: transparent;
+}
+
+.form_button {
+  width: 80%;
+  font-size: 18px;
+  color: white;
+  background-color: #ec3d67;
+  border: none;
+  height: 30px;
+}
+
+.maps {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.maps iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  margin-top: 400px;
+}
+
+.maps_text {
+  float: left;
+  margin-left: 250px;
+  font-size: 30px;
+}
+
+footer {
+  background-color: antiquewhite;
+  font-family: Arial;
+  font-size: 14px;
+  position: absolute;
+  width: 100%;
+  margin-top: 400px;
+}
+
+.footer_form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register_form {
+  font-size: 14px;
+}
+
+.footer_logo {
+  margin-left: 600px;
+}
