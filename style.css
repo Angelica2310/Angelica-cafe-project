@@ -5,23 +5,20 @@
 body {
   margin: 0;
   background-color: #ffe4e1;
-  min-height: 100vh; /*full screen*/
 }
 
 header {
   color: palevioletred;
   font-family: fantasy;
-  height: 160px;
-  width: 100%;
-  background-color: transparent;
-  overflow: hidden;
-  margin-top: -20px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(coffeeshop.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .logo {
   float: left;
-  top: -20px;
-  left: 7px;
 }
 
 nav {
@@ -29,85 +26,127 @@ nav {
   padding-right: 120px;
 }
 
-li {
-  list-style: none;
-  display: inline-block;
-  padding-top: 100px;
+ul {
+  margin: auto;
 }
 
-ul li {
+li {
+  margin-top: 30px;
   list-style: none;
+  display: inline-block;
   margin-right: 100px;
   font-size: 20px;
   cursor: pointer;
+  border: 2px solid palevioletred;
+  border-radius: 10px;
+  width: 120px;
+  text-align: center;
 }
 
-ul li:hover {
+li:hover {
   background: white;
   color: black;
   padding: 10px;
   font-size: 21px;
 }
 
-.header_list button {
-  position: flex;
-  border: none;
-  background-color: transparent;
-  color: palevioletred;
-  font-family: fantasy;
-  font-size: 16px;
-  text-align: center;
-}
-
 .book_button {
   background-color: white;
   border: 2px solid palevioletred;
+  border-radius: 10px;
   padding: 15px 10px;
   width: 130px;
   cursor: pointer;
   position: fixed;
   right: 10px;
-  top: 70px;
+  top: 20px;
+  text-align: center;
+  color: hotpink;
 }
 
-.about_us_img {
-  margin-left: 100px;
-  margin-right: 50px;
-  margin-top: -70px;
-  float: left;
+.book_button:hover {
+  background-color: palevioletred;
+  color: white;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+div.wiggle {
+  display: inline-block;
+  animation: wiggle 2.5s infinite;
+}
+
+div.wiggle:hover {
+  animation: none;
 }
 
 .about_us {
   font-size: 20px;
   line-height: 1.3em;
-  margin: 100px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(beautiful-view-from-cafe-s-window.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.about_us_text {
+.about_us p {
   text-align: justify;
-  margin-top: 10px;
-  margin-right: 130px;
+  text-wrap: wrap;
+  width: 700px;
+  backdrop-filter: blur(10px);
 }
 
 h2 {
-  text-align: right;
-  margin-right: 350px;
   font-family: fantasy;
   color: palevioletred;
   font-weight: bold;
+  border: 2px solid palevioletred;
+  border-radius: 10px;
+  width: 180px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: -110px;
 }
 
-.our_menu_table {
+.our_menu {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(abstract-blur-coffee-shop.jpg);
+  background-size: cover;
+  background-position: center;
   text-align: center;
   border: 5px solid palevioletred;
-  border-style: dotted;
-  margin-left: 250px;
-  margin-right: 250px;
-  margin-bottom: 100px;
-  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.our_menu_text {
+.our_menu_content {
   font-family: fantasy;
   color: palevioletred;
   font-weight: bold;
@@ -117,11 +156,10 @@ h2 {
 table,
 th,
 td {
-  border: 1px solid palevioletred;
-  border-collapse: collapse;
-  font-size: 20px;
-  margin-left: 200px;
-  margin-bottom: 50px;
+  border-bottom: 1px solid palevioletred;
+  font-size: 25px;
+  background-color: white;
+  font-family: Times, sans-serif;
 }
 
 .contact_us_text {
@@ -131,15 +169,14 @@ td {
 
 .contact_us_content {
   display: inline-block;
-  margin-right: 50%;
-  margin-top: -20px;
 }
 
 .contact_us {
-  margin-bottom: 100px;
-  margin-top: -50px;
-  float: left;
-  margin-left: 250px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(abstract-blur-coffee-shop.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .icon_img {
@@ -149,11 +186,7 @@ td {
 }
 
 .side_form {
-  position: absolute;
-  height: 50%;
   border: 5px solid hotpink;
-  width: 30%;
-  margin-left: 53%;
   border-style: hidden;
 }
 
