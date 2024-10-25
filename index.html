@@ -9,47 +9,52 @@
   </head>
   <body>
     <!-- partial:index.partial.html -->
-
+    <!-- HEADER -->
     <section id="home" class="header">
-      <!-- Background Video -->
+      <!-- background video -->
       <video class="video-container" muted autoplay loop>
         <source src="./assets/video-coffee.mp4" type="video/mp4" />
       </video>
-      <!-- Nav header-->
-      <nav id="nav">
-        <div class="header_bar">
-          <div class="logo">
-            <img
-              src="assets/Angelica_Cafe-removebg-preview.png"
-              alt="logo"
-              width="200"
-              height="200"
-            />
-          </div>
-          <!-- links-->
-          <div class="links-container"></div>
-          <ul class="links">
-            <li><a href="#about" class="scroll-link">About us</a></li>
-            <li><a href="#menu" class="scroll-link">Our menu</a></li>
-            <li><a href="#contact" class="scroll-link">Contact us</a></li>
-          </ul>
+
+      <!-- nav header-->
+      <nav id="nav" class="header_bar">
+        <!-- header logo -->
+        <div class="logo">
+          <img
+            src="assets/Angelica_Cafe-removebg-preview.png"
+            alt="logo"
+            width="200"
+            height="200"
+          />
         </div>
+
+        <!-- links-->
+        <ul class="links">
+          <li><a href="#about" class="scroll-link">About us</a></li>
+          <li><a href="#menu" class="scroll-link">Our menu</a></li>
+          <li><a href="#contact" class="scroll-link">Contact us</a></li>
+        </ul>
+
         <!-- book button -->
         <div class="book_button wiggle">
           <button onclick="popupFn()">Book a table</button>
         </div>
-      </nav>
 
-      <div id="overlay"></div>
-      <div id="popupDialog">
-        <p>
-          Sorry, our booking system is currently under maintenance. Please try
-          again later. Apologies for any inconvenience this might cause.
-        </p>
-        <button onclick="closeFn()">close</button>
-      </div>
+        <!-- book button pop-up -->
+        <div id="overlay"></div>
+        <div id="popupDialog">
+          <p>
+            Sorry, our booking system is currently under maintenance. Please try
+            again later. Apologies for any inconvenience this might cause.
+          </p>
+          <button onclick="closeFn()">close</button>
+        </div>
+      </nav>
     </section>
-    <div class="main-content">
+
+    <!-- MAIN -->
+    <section class="main-content">
+      <!-- about us -->
       <div id="about" class="about_us">
         <h2>About us</h2>
         <p>
@@ -71,6 +76,8 @@
           Angelica's Cafe for a coffee experience like no other!
         </p>
       </div>
+
+      <!-- menu -->
       <div id="menu" class="menu">
         <!-- title -->
         <div class="title">
@@ -91,7 +98,7 @@
         <!-- menu items -->
         <div class="section-center">
           <!-- single item -->
-          <article class="menu-item">
+          <div class="menu-item">
             <img
               src="assets/regular-coffee.jpg"
               alt="background-photo"
@@ -107,67 +114,66 @@
                 accusamus natus vero dolor corporis, officiis, molestiae harum
               </p>
             </div>
-          </article>
+          </div>
           <!-- end of single item -->
         </div>
       </div>
 
-      <!-- Contact us -->
+      <!-- contact us -->
       <div id="contact" class="contact_us">
-        <div class="contact-message">
-          <!-- Get in touch -->
-          <div class="get_in_touch">
-            <h2>Get In Touch</h2>
-            <p>
-              We love a chat, and we’re always happy to speak to our clients and
-              answer any questions they may have. Feel free to get in touch,
-              we’re waiting!
-            </p>
-            <div class="relative">
-              <img src="assets/address.jpg" width="20px" alt="address icon" />
-              <p>Address : 123 Marfleet Lane Hull, HU1 2AB</p>
+        <!-- get in touch -->
+        <div class="get_in_touch">
+          <h2>Get In Touch</h2>
+          <p>
+            We love a chat, and we’re always happy to speak to our clients and
+            answer any questions they may have. Feel free to get in touch, we’re
+            waiting!
+          </p>
+          <div class="relative">
+            <img src="assets/address.jpg" width="20px" alt="address icon" />
+            <p>Address : 123 Marfleet Lane Hull, HU1 2AB</p>
 
-              <img src="assets/phone.jpg" width="20px" alt="phone icon" />
-              <p>Tel : 0123 456789</p>
+            <img src="assets/phone.jpg" width="20px" alt="phone icon" />
+            <p>Tel : 0123 456789</p>
 
-              <img src="assets/mail.jpg" width="20px" alt="mail icon" />
-              <p>Email : abc@angelicacafe.co.uk</p>
-            </div>
-          </div>
-
-          <!-- Message Us -->
-          <div class="message_us">
-            <form class="message_form">
-              <h2>Message Us</h2>
-
-              <input
-                style="width: 80%"
-                type="text"
-                id="fname"
-                name="fname"
-                placeholder="Full name"
-              /><br />
-
-              <input
-                style="width: 80%"
-                type="text"
-                id="email"
-                name="fname"
-                placeholder="Email"
-              /><br />
-
-              <input
-                style="width: 80%"
-                type="text"
-                id="message"
-                name="fname"
-                placeholder="Message"
-              /><br />
-              <button class="form_button">Send</button>
-            </form>
+            <img src="assets/mail.jpg" width="20px" alt="mail icon" />
+            <p>Email : abc@angelicacafe.co.uk</p>
           </div>
         </div>
-        <!-- Find us on -->
+
+        <!-- message us -->
+        <div class="message_us">
+          <form class="message_form">
+            <h2>Message Us</h2>
+
+            <input
+              style="width: 80%"
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Full name"
+            /><br />
+
+            <input
+              style="width: 80%"
+              type="text"
+              id="email"
+              name="fname"
+              placeholder="Email"
+            /><br />
+
+            <input
+              style="width: 80%"
+              type="text"
+              id="message"
+              name="fname"
+              placeholder="Message"
+            /><br />
+            <button class="form_button">Send</button>
+          </form>
+        </div>
+
+        <!-- find us on -->
         <div class="find_us">
           <h2>Find us on</h2>
           <div class="maps">
@@ -182,31 +188,36 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="footer">
+    <!-- FOOTER -->
+    <section class="footer">
+      <!-- scroll up button -->
       <a class="scroll-link top-link" href="#home">
         <img src="assets/9166696-removebg-preview.png" width="120px" />
       </a>
-      <div class="footer_bar">
-        <div class="footer_logo">
-          <img src="assets/Angelica_Cafe-removebg-preview.png" width="180px"
-          alt"logo">
-        </div>
-        <div class="footer_form">
-          <form>
-            <label for="mail">Register your email to receive promotion:</label>
-            <input
-              class="register_form"
-              type="text"
-              name="mail"
-              placeholder="Enter your email"
-            />
-            <input class="register_form" type="Submit" value="Submit" />
-          </form>
-        </div>
+      <!-- logo -->
+      <div class="footer_logo">
+        <img
+          src="assets/Angelica_Cafe-removebg-preview.png"
+          width="180px"
+          alt="logo"
+        />
       </div>
-    </div>
+      <!-- footer form -->
+      <div class="footer_form">
+        <form>
+          <label for="mail">Register your email to receive promotion:</label>
+          <input
+            class="register_form"
+            type="text"
+            name="mail"
+            placeholder="Enter your email"
+          />
+          <input class="register_form" type="Submit" value="Submit" />
+        </form>
+      </div>
+    </section>
 
     <!-- partial -->
     <script src="./script.js"></script>
