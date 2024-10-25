@@ -174,10 +174,7 @@ About us
   line-height: 1.3em;
   width: 100vw;
   height: 100vh;
-  background-image: image-set(
-    url("assets/beautiful-view-from-cafe-s-window (1).jpg") 1x,
-    url("assets/beautiful-view-from-cafe-s-window.jpg") 2x
-  );
+  background-image: url("./assets/beautiful-view-from-cafe-s-window.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -226,10 +223,8 @@ Menu
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    image-set(
-      url("assets/menu-background(1).jpg") 1x,
-      url("assets/menu-background.jpg") 2x
-    );
+    url("./assets/menu-background.jpg");
+
   background-size: cover;
   padding: 5rem 0;
   display: flex;
@@ -376,12 +371,8 @@ Contact us
 .contact_us {
   width: 100vw;
   height: 100vh;
-  background-image: image-set(
-    url("assets/overhead-view-spiral-notepad-laptop-with-coffee-cup-desk (2).jpg")
-      1x,
-    url("assets/overhead-view-spiral-notepad-laptop-with-coffee-cup-desk (1).jpg")
-      2x
-  );
+  background-image: url("./assets/overhead-view-spiral-notepad-laptop-with-coffee-cup-desk (1).jpg");
+
   background-size: cover;
   background-position: center;
   position: relative;
